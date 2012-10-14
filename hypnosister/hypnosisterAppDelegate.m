@@ -28,7 +28,7 @@
     HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:anotherFrame] ;
     [anotherView setBackgroundColor:[UIColor blueColor]] ;
      
-    [[self window] addSubview:anotherView] ;
+    [view addSubview:anotherView] ;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
