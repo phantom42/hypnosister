@@ -13,6 +13,7 @@
 		EFDC2E17162A7322003E0C39 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EFDC2E15162A7322003E0C39 /* InfoPlist.strings */; };
 		EFDC2E19162A7322003E0C39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC2E18162A7322003E0C39 /* main.m */; };
 		EFDC2E1D162A7322003E0C39 /* hypnosisterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC2E1C162A7322003E0C39 /* hypnosisterAppDelegate.m */; };
+		EFDC2E25162A759C003E0C39 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDC2E24162A759C003E0C39 /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		EFDC2E1A162A7322003E0C39 /* hypnosister-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "hypnosister-Prefix.pch"; sourceTree = "<group>"; };
 		EFDC2E1B162A7322003E0C39 /* hypnosisterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hypnosisterAppDelegate.h; sourceTree = "<group>"; };
 		EFDC2E1C162A7322003E0C39 /* hypnosisterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hypnosisterAppDelegate.m; sourceTree = "<group>"; };
+		EFDC2E23162A759C003E0C39 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HypnosisView.h; sourceTree = "<group>"; };
+		EFDC2E24162A759C003E0C39 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 			children = (
 				EFDC2E1B162A7322003E0C39 /* hypnosisterAppDelegate.h */,
 				EFDC2E1C162A7322003E0C39 /* hypnosisterAppDelegate.m */,
+				EFDC2E23162A759C003E0C39 /* HypnosisView.h */,
+				EFDC2E24162A759C003E0C39 /* HypnosisView.m */,
 				EFDC2E13162A7322003E0C39 /* Supporting Files */,
 			);
 			path = hypnosister;
@@ -155,6 +160,7 @@
 			files = (
 				EFDC2E19162A7322003E0C39 /* main.m in Sources */,
 				EFDC2E1D162A7322003E0C39 /* hypnosisterAppDelegate.m in Sources */,
+				EFDC2E25162A759C003E0C39 /* HypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
