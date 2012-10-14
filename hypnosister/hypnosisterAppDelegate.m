@@ -23,6 +23,13 @@
     
     [[self window] addSubview:view] ;
     
+    CGRect anotherFrame = CGRectMake(20,30,50,50) ;
+    
+    HypnosisView *anotherView = [[HypnosisView alloc] initWithFrame:anotherFrame] ;
+    [anotherView setBackgroundColor:[UIColor blueColor]] ;
+     
+    [[self window] addSubview:anotherView] ;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
