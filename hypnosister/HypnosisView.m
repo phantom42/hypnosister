@@ -9,6 +9,7 @@
 #import "HypnosisView.h"
 
 @implementation HypnosisView
+@synthesize circleColor ;
 
 - (void)drawRect:(CGRect)dirtyRect
 {
@@ -27,7 +28,7 @@
     CGContextSetLineWidth(ctx, 10) ;
     
     //the color of the line should be gray (red/green/blue = 0.6, alpha = 1.0) ;
-    [[UIColor lightGrayColor] setStroke] ;
+    [[self circleColor] setStroke] ;
     
     //draw concentric circles from the outside in
     for (float currentRadius = maxRadius ; currentRadius > 0 ; currentRadius -= 20) {
@@ -79,6 +80,7 @@
     {
         // all hypnosisViews start with a clear background color
         [self setBackgroundColor:[UIColor clearColor]] ;
+        [self setCircleColor:[UIColor lightGrayColor]] ;
         
     }
 return self ;
