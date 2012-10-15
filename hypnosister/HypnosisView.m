@@ -27,7 +27,7 @@
     CGContextSetLineWidth(ctx, 10) ;
     
     //the color of the line should be gray (red/green/blue = 0.6, alpha = 1.0) ;
-    CGContextSetRGBStrokeColor(ctx,0.6, 0.6, 0.6, 1.0) ;
+    [[UIColor lightGrayColor] setStroke] ;
     
     //draw concentric circles from the outside in
     for (float currentRadius = maxRadius ; currentRadius > 0 ; currentRadius -= 20) {
