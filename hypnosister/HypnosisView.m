@@ -38,6 +38,38 @@
         // perform drawing instruction; removes path
         CGContextStrokePath(ctx) ;
     }
+    
+    // create a string
+    NSString *text = @"You are getting sleepy." ;
+    
+    // get a font to draw it in
+    UIFont *font = [UIFont boldSystemFontOfSize:28] ;
+    
+    CGRect textRect ;
+    
+    // how big is this string when drawn in this font?
+    textRect.size = [text sizeWithFont:font] ;
+    
+    // let's put that string in the center of the view
+    textRect.origin.x = center.x - textRect.size.width / 2.0 ;
+    textRect.origin.y = center.y - textRect.size.height / 2.0 ;
+    
+    // set the fill color of the current context to black
+    [[UIColor blackColor] setFill] ;
+    
+    // the shadow will move 4 points to the right and 3 points down from the text
+    CGSize offset = CGSizeMake(4,3) ;
+    
+    // the shadow will be dark gray in color
+    CGColorRef color = [[UIColor darkGrayColor] CGColor] ;
+    
+    // set the shadow of the context with these parameters
+    // all subsequent drawing will be shadowed
+    CGContextSetShadowWithColor(ctx, offset, 2.0, color) ;
+    
+    // draw the string
+    [text drawInRect: textRect
+            withFont: font] ;
 }
 
 - (id)initWithFrame:(CGRect)frame
