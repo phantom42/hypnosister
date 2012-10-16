@@ -86,4 +86,23 @@
 return self ;
 }
 
+- (BOOL)canBecomeFirstResponder
+{
+    return YES ;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
+{
+    if (motion == UIEventSubtypeMotionShake){
+        NSLog(@"Device started shaking!") ;
+        [self setCircleColor:[UIColor redColor]];
+    }
+}
+- (void)setCircleColor:(UIColor *)clr
+{
+    circleColor = clr ;
+    [self setNeedsDisplay] ;
+}
 @end
+
+
