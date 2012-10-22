@@ -80,7 +80,7 @@
     {
         // all hypnosisViews start with a clear background color
         [self setBackgroundColor:[UIColor clearColor]] ;
-        [self setCircleColor:[UIColor lightGrayColor]] ;
+        [self setCircleColor: [self selectRandomColor]] ;
         
     }
 return self ;
@@ -95,7 +95,7 @@ return self ;
 {
     if (motion == UIEventSubtypeMotionShake){
         NSLog(@"Device started shaking!") ;
-        [self setCircleColor:[UIColor redColor]];
+        [self setCircleColor:[self selectRandomColor]];
     }
 }
 - (void)setCircleColor:(UIColor *)clr
@@ -103,6 +103,22 @@ return self ;
     circleColor = clr ;
     [self setNeedsDisplay] ;
 }
+- (UIColor *) selectRandomColor
+{
+    NSMutableArray *colorArray = [NSMutableArray array] ;
+    [colorArray addObject:[UIColor blackColor]] ;
+    [colorArray addObject:[UIColor blueColor]] ;
+    [colorArray addObject:[UIColor redColor]] ;
+    [colorArray addObject:[UIColor greenColor]] ;
+    [colorArray addObject:[UIColor orangeColor]] ;
+    [colorArray addObject:[UIColor purpleColor]] ;
+    [colorArray addObject:[UIColor brownColor]] ;
+    return [colorArray objectAtIndex: arc4random() % [colorArray count]];
+
+    
+}
+
 @end
+
 
 
