@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HypnosisView.h"
 
-@interface hypnosisterAppDelegate : UIResponder <UIApplicationDelegate>
+@interface hypnosisterAppDelegate : UIResponder <UIApplicationDelegate, UIScrollViewDelegate>
+{
+    HypnosisView *view ;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
