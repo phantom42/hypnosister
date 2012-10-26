@@ -40,6 +40,9 @@
         CGContextStrokePath(ctx) ;
     }
     
+    // save the settings for all the drawing functions as of now
+    CGContextSaveGState(ctx) ;
+    
     // create a string
     NSString *text = @"You are getting sleepy." ;
     
@@ -71,6 +74,22 @@
     // draw the string
     [text drawInRect: textRect
             withFont: font] ;
+    
+    // roll back to the pre-text settings - this undoes the drop shadow stuff
+    CGContextRestoreGState(ctx) ;
+    
+    // draw the crosshairs
+    int crossHairLength = 40 ;
+    CGContextSetLineWidth(ctx, 2) ;
+    [[UIColor greenColor] setStroke] ;
+    CGContextMoveToPoint(ctx, center.x, center.y - crossHairLength) ;
+    CGContextAddLineToPoint(ctx, center.x, center.y + crossHairLength) ;
+    CGContextMoveToPoint(ctx, center.x, center.y) ;
+    CGContextAddLineToPoint(ctx, center.x - crossHairLength, center.y ) ;
+    CGContextAddLineToPoint(ctx, center.x + crossHairLength, center.y ) ;
+    CGContextStrokePath(ctx) ;
+    
+    
 }
 
 - (id)initWithFrame:(CGRect)frame
