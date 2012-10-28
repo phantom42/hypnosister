@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4DE675163D9E6100B71754 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EF4DE674163D9E6100B71754 /* Icon.png */; };
+		EF4DE679163D9EB200B71754 /* LogoView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF4DE678163D9EB200B71754 /* LogoView.m */; };
 		EFDC2E0D162A7322003E0C39 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC2E0C162A7322003E0C39 /* UIKit.framework */; };
 		EFDC2E0F162A7322003E0C39 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC2E0E162A7322003E0C39 /* Foundation.framework */; };
 		EFDC2E11162A7322003E0C39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDC2E10162A7322003E0C39 /* CoreGraphics.framework */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF4DE674163D9E6100B71754 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EF4DE677163D9EB200B71754 /* LogoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogoView.h; sourceTree = "<group>"; };
+		EF4DE678163D9EB200B71754 /* LogoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogoView.m; sourceTree = "<group>"; };
 		EFDC2E08162A7322003E0C39 /* hypnosister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hypnosister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFDC2E0C162A7322003E0C39 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EFDC2E0E162A7322003E0C39 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -48,6 +53,7 @@
 		EFDC2DFD162A7321003E0C39 = {
 			isa = PBXGroup;
 			children = (
+				EF4DE674163D9E6100B71754 /* Icon.png */,
 				EFDC2E12162A7322003E0C39 /* hypnosister */,
 				EFDC2E0B162A7322003E0C39 /* Frameworks */,
 				EFDC2E09162A7322003E0C39 /* Products */,
@@ -80,6 +86,8 @@
 				EFDC2E23162A759C003E0C39 /* HypnosisView.h */,
 				EFDC2E24162A759C003E0C39 /* HypnosisView.m */,
 				EFDC2E13162A7322003E0C39 /* Supporting Files */,
+				EF4DE677163D9EB200B71754 /* LogoView.h */,
+				EF4DE678163D9EB200B71754 /* LogoView.m */,
 			);
 			path = hypnosister;
 			sourceTree = "<group>";
@@ -148,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFDC2E17162A7322003E0C39 /* InfoPlist.strings in Resources */,
+				EF4DE675163D9E6100B71754 /* Icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,6 +170,7 @@
 				EFDC2E19162A7322003E0C39 /* main.m in Sources */,
 				EFDC2E1D162A7322003E0C39 /* hypnosisterAppDelegate.m in Sources */,
 				EFDC2E25162A759C003E0C39 /* HypnosisView.m in Sources */,
+				EF4DE679163D9EB200B71754 /* LogoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

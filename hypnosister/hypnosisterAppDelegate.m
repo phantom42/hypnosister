@@ -8,6 +8,7 @@
 
 #import "hypnosisterAppDelegate.h"
 #import "HypnosisView.h"
+#import "LogoView.h"
 
 @implementation hypnosisterAppDelegate
 
@@ -49,6 +50,11 @@
     } else {
         NSLog(@"Could not become first responder") ;
     }
+    
+    CGRect logoRect = CGRectMake(0, 0, 50, 50) ;
+    LogoView *logoView = [[LogoView alloc] initWithFrame:logoRect] ;
+    [view addSubview:logoView] ;
+    
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
