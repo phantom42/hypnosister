@@ -39,12 +39,11 @@
     // read in the logo image
     UIImage *logo = [UIImage imageNamed:@"Icon.png"] ;
     
-    // save graphics context settings
-    CGContextSaveGState(ctx) ;
-    
+    // create a clipping path
     CGContextAddArc(ctx, center.x, center.y, 25, 0, M_PI * 2.0, YES) ;
     CGContextClip(ctx) ;
     
+    // draw in the logo
     [logo drawInRect:rect] ;
     
     // gradients require a few steps
@@ -58,9 +57,6 @@
     CGPoint gradientEndPoint = CGPointMake(center.x, center.y) ;
     // draw the actual gradient
     CGContextDrawLinearGradient(ctx, logoGradientRef, gradientStartPoint, gradientEndPoint, kCGGradientDrawsBeforeStartLocation);
-    
-    // switch back to original settings
-    CGContextRestoreGState(ctx) ;
     
     // create a shadow. it's very hard to see. change the color if you want to see it easier
     CGSize offset = CGSizeMake (0,2) ;
